@@ -15,6 +15,8 @@
 		65BE24CE2474BE1E007BD914 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65BE24CC2474BE1E007BD914 /* LaunchScreen.storyboard */; };
 		65BE24D92474BE1E007BD914 /* WeatherUpcomingDaysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE24D82474BE1E007BD914 /* WeatherUpcomingDaysTests.swift */; };
 		65BE24E42474BE1E007BD914 /* WeatherUpcomingDaysUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE24E32474BE1E007BD914 /* WeatherUpcomingDaysUITests.swift */; };
+		65F7A0622474DA840095879E /* WUDModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F7A0612474DA840095879E /* WUDModel.swift */; };
+		65F7A0662474FE680095879E /* WUDService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F7A0652474FE680095879E /* WUDService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		65BE24DF2474BE1E007BD914 /* WeatherUpcomingDaysUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherUpcomingDaysUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65BE24E32474BE1E007BD914 /* WeatherUpcomingDaysUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherUpcomingDaysUITests.swift; sourceTree = "<group>"; };
 		65BE24E52474BE1E007BD914 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65F7A0612474DA840095879E /* WUDModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WUDModel.swift; sourceTree = "<group>"; };
+		65F7A0652474FE680095879E /* WUDService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WUDService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +105,9 @@
 			children = (
 				65BE24C12474BE1C007BD914 /* AppDelegate.swift */,
 				65BE24C32474BE1C007BD914 /* SceneDelegate.swift */,
-				65BE24C52474BE1C007BD914 /* ViewController.swift */,
+				65F7A0632474DA8B0095879E /* Model */,
+				65F7A0642474FE100095879E /* View */,
+				65F7A0672474FE760095879E /* Service */,
 				65BE24C72474BE1C007BD914 /* Main.storyboard */,
 				65BE24CA2474BE1E007BD914 /* Assets.xcassets */,
 				65BE24CC2474BE1E007BD914 /* LaunchScreen.storyboard */,
@@ -126,6 +132,30 @@
 				65BE24E52474BE1E007BD914 /* Info.plist */,
 			);
 			path = WeatherUpcomingDaysUITests;
+			sourceTree = "<group>";
+		};
+		65F7A0632474DA8B0095879E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				65F7A0612474DA840095879E /* WUDModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		65F7A0642474FE100095879E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				65BE24C52474BE1C007BD914 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		65F7A0672474FE760095879E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				65F7A0652474FE680095879E /* WUDService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +289,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65F7A0662474FE680095879E /* WUDService.swift in Sources */,
 				65BE24C62474BE1C007BD914 /* ViewController.swift in Sources */,
 				65BE24C22474BE1C007BD914 /* AppDelegate.swift in Sources */,
+				65F7A0622474DA840095879E /* WUDModel.swift in Sources */,
 				65BE24C42474BE1C007BD914 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

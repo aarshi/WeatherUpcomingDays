@@ -12,9 +12,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let wudServiceObject = WUDService()
+        wudServiceObject.forecastUrlString(cityName: "Denver")
         // Do any additional setup after loading the view.
     }
-//Hi, this is a test commit
-
 }
 
